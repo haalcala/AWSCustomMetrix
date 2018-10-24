@@ -61,6 +61,16 @@ if [ ! -e "./aws-scripts/cloudwatch/.ec2_region" ]; then
     echo "$EC2_REGION" > ./aws-scripts/cloudwatch/.ec2_region
 fi
 
+if [ "$(crontab -l | grep custom_metrics)" == "" ]; then
+    echo "Cron job not found."
+    echo "Scheduling cron job ..."
+
+    cronjob="*/5 * * * * $PWD/aws-scripts/cloudwatch/custom_metrics.sh"
+    (crontab -l; echo "$cronjob" ) | crontab -
+
+    echo "Scheduling cron job ... done."
+fi
+
 echo ""
 echo "Installation complete."
 echo ""
