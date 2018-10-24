@@ -1,6 +1,8 @@
-Taken from the insructions found here
+Automated AWS Cloudwatch custom script installation. (Including crontab schedule)
 
-    http://www.matteomattei.com/create-self-contained-installer-in-bash-that-extracts-archives-and-perform-actitions/
+Please get your aws KEY, SECRET and REGION ready.
+
+![Screenshot](http://https://raw.githubusercontent.com/haalcala/AWSCustomMetrix/master/sceenshot.png)
 
 Install by using
 
