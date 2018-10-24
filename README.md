@@ -2,7 +2,7 @@ Automated AWS Cloudwatch custom script installation. (Including crontab schedule
 
 Please get your aws KEY, SECRET and REGION ready.
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot2.png)
 
 Install by using
 
