@@ -12,7 +12,7 @@ echo "Extracting archive ..."
 
 # Find __ARCHIVE__ maker, read archive content and decompress it
 ARCHIVE=$(awk '/^__ARCHIVE__/ {print NR + 1; exit 0; }' "${0}")
-tail -n+${ARCHIVE} "${0}" | tar xvz -C ${DESTINATION}
+tail -n+${ARCHIVE} "${0}" | tar xz -C ${DESTINATION}
 
 echo "Extracting archive ... done."
 
