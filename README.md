@@ -7,3 +7,6 @@ Please get your aws KEY, SECRET and REGION ready.
 Install by using
 
     curl https://raw.githubusercontent.com/haalcala/AWSCustomMetrix/master/installer.sh -o installer.sh && bash ./installer.sh
+
+
+
