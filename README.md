@@ -4,4 +4,4 @@ Taken from the insructions found here
 
 Install by using
 
-    curl -o- https://raw.githubusercontent.com/haalcala/AWSCustomMetrix/master/installer.sh | sudo bash
+    curl https://raw.githubusercontent.com/haalcala/AWSCustomMetrix/master/installer.sh -o installer.sh && bash ./installer.sh
