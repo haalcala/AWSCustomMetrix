@@ -9,12 +9,12 @@ if [ "$USER" != "root" ]; then
     exit 1
 fi
 
-# instanceId=$(curl -m 3 -s 'http://169.254.169.254/latest/meta-data/instance-id')
+instanceId=$(curl -m 3 -s 'http://169.254.169.254/latest/meta-data/instance-id')
 
-# if [ "$instanceId" == "" ]; then
-#     echo "Unable to check instanceId.  Please note that this script only works directly on an AWS EC2 instance"
-#     exit 1
-# fi
+if [ "$instanceId" == "" ]; then
+    echo "Unable to check instanceId.  Please note that this script only works directly on an AWS EC2 instance"
+    exit 1
+fi
 
 if [ ! -d "./aws-scripts" ]; then
     # Create destination folder
